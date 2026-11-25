@@ -1,0 +1,401 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cotizaciones y tarifas</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="CSS/estilos.css">
+</head>
+
+<body>
+
+     <!-- BARRA DE NAVEGACIÓN -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-nimbus">
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="index.html">
+                NIMBUS<span>CR</span>
+                <small class="d-block brand-subtitle">
+                    SOLUCIONES LOGÍSTICAS
+                </small>
+            </a>
+
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menuPrincipal"
+                    aria-controls="menuPrincipal"
+                    aria-expanded="false"
+                    aria-label="Abrir menú">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">
+                            Inicio
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicios.html">
+                            Servicios
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="envios.html">
+                            Rastreo de envíos
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">
+                            Contacto
+                        </a>
+                    </li>
+
+                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                        <a href="cotizacion.html" class="btn btn-cotizar">
+                            Solicitar cotización
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- ========================================
+         CONTENIDO PRINCIPAL
+    ========================================= -->
+    <main>
+
+        <!-- ENCABEZADO -->
+        <section class="encabezado-cotizacion">
+
+            <div class="container text-center">
+
+                <span class="seccion-etiqueta">NIMBUSCR</span>
+
+                <h1 class="titulo-seccion">
+                    Tarifas y cotizaciones
+                </h1>
+
+                <p class="texto-seccion">
+                    Conocé nuestras tarifas de referencia para el transporte
+                    y entrega de paquetes. Si necesitás un servicio especial,
+                    comunicate directamente con nuestro equipo.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             TABLAS DE TARIFAS
+        ========================================= -->
+        <section class="seccion-tarifas">
+
+            <div class="container">
+
+                <div class="row g-4">
+
+
+                    <!-- TARIFA 1: CARGA LIVIANA -->
+                    <div class="col-lg-4 col-md-6">
+
+                        <article class="tarjeta-tarifa">
+
+                            <header class="titulo-tarifa">
+
+                                <h2>NIMBUSCR</h2>
+
+                                <span>CARGA LIVIANA</span>
+
+                            </header>
+
+                            <div class="rango-tarifa">
+                                DE 3 A 10 KG
+                            </div>
+
+                            <div class="tabla-tarifa">
+
+                                <table>
+
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">ORIGEN</th>
+                                            <th scope="col">DESTINO</th>
+                                            <th scope="col">TARIFA</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+
+                                        <tr>
+                                            <td>GAM</td>
+                                            <td>GAM</td>
+                                            <td>₡3.982,30</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>GAM</td>
+                                            <td>RESTO</td>
+                                            <td>₡3.982,30</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>RESTO</td>
+                                            <td>GAM</td>
+                                            <td>₡3.982,30</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>RESTO</td>
+                                            <td>RESTO</td>
+                                            <td>₡3.982,30</td>
+                                        </tr>
+
+                                    </tbody>
+
+                                </table>
+
+                                <p class="nota-tarifa">
+                                    Tarifas sin IVA
+                                </p>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+
+                    <!-- TARIFA 2: CARGA PESADA -->
+                    <div class="col-lg-4 col-md-6">
+
+                        <article class="tarjeta-tarifa">
+
+                            <header class="titulo-tarifa">
+
+                                <h2>NIMBUSCR</h2>
+
+                                <span>PYMES PESADO EXPRESS</span>
+
+                            </header>
+
+                            <div class="rango-tarifa">
+                                DE 10 A 50 KG
+                            </div>
+
+                            <div class="tabla-tarifa">
+
+                                <table>
+
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">DESDE (g)</th>
+                                            <th scope="col">HASTA (g)</th>
+                                            <th scope="col">TARIFA</th>
+                                            <th scope="col">KG ADICIONAL</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+
+                                        <tr>
+                                            <td>10.000</td>
+                                            <td>20.000</td>
+                                            <td>₡9.800</td>
+                                            <td>₡1.000</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>20.001</td>
+                                            <td>30.000</td>
+                                            <td>₡14.000</td>
+                                            <td>₡1.000</td>
+                                        </tr>
+
+                                    </tbody>
+
+                                </table>
+
+                                <p class="nota-tarifa">
+                                    Tarifas sin IVA
+                                </p>
+
+                                <p class="nota-tarifa">
+                                    Tarifa única para todos los destinos a nivel nacional.
+                                </p>
+
+                                <p class="nota-tarifa">
+                                    Máximo 20 kilos adicionales.
+                                </p>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+
+                    <!-- TARIFA 3: GRAN VOLUMEN -->
+                    <div class="col-lg-4 col-md-6">
+
+                        <article class="tarjeta-tarifa">
+
+                            <header class="titulo-tarifa">
+
+                                <h2>NIMBUSCR</h2>
+
+                                <span>PYME CONECTA CR</span>
+
+                            </header>
+
+                            <div class="rango-tarifa">
+                                GRAN VOLUMEN (L, XL, 2XL)
+                            </div>
+
+                            <div class="tabla-tarifa">
+
+                                <table>
+
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">CATEGORÍA</th>
+                                            <th scope="col">DIMENSIONES</th>
+                                            <th scope="col">TARIFA</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+
+                                        <tr>
+                                            <td>L</td>
+                                            <td>50 x 50 x 50 cm</td>
+                                            <td>₡6.960</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>XL</td>
+                                            <td>160 x 40 x 40 cm</td>
+                                            <td>₡18.531</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>2XL</td>
+                                            <td>190 x 100 x 100 cm</td>
+                                            <td>₡22.185</td>
+                                        </tr>
+
+                                    </tbody>
+
+                                </table>
+
+                                <p class="nota-tarifa">
+                                    Tarifas sin IVA
+                                </p>
+
+                                <p class="nota-tarifa">
+                                    Tarifa única para todos los destinos a nivel nacional.
+                                </p>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ========================================
+                     COTIZACIÓN TELEFÓNICA
+                ========================================= -->
+                <section class="bloque-cotizacion text-center">
+
+                    <span class="seccion-etiqueta">
+                        Contacto
+                    </span>
+
+                    <h2>
+                        ¿Necesitás una cotización personalizada?
+                    </h2>
+                    <a href="tel:+50622339562" class="btn-principal">
+
+                        <i class="bi bi-telephone-fill" aria-hidden="true"></i>
+
+                        Llamar para cotizar
+
+                    </a>
+
+                    <p class="telefono-cotizacion">
+                        Teléfono: <strong>2233-9562</strong>
+                    </p>
+
+                </section>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+     <!-- PIE DE PÁGINA -->
+    <footer class="footer-nimbus">
+
+        <div class="container py-4">
+
+            <div class="row align-items-center g-3">
+
+                <div class="col-md-6">
+
+                    <h5>NIMBUSCR</h5>
+
+                </div>
+
+                <div class="col-md-6 text-md-end">
+
+                    <p class="mb-0">
+                        © 2026 NimbusCR. Ericka Morales Quesada.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript personalizado -->
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>

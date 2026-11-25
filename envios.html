@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rastro de envíos</title>
+
+    <!-- Bootstrap 5.3.8 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="CSS/estilos.css">
+</head>
+
+<body>
+
+    <!-- BARRA DE NAVEGACIÓN -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-nimbus">
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="index.html">
+                NIMBUS<span>CR</span>
+                <small class="d-block brand-subtitle">
+                    SOLUCIONES LOGÍSTICAS
+                </small>
+            </a>
+
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menuPrincipal"
+                    aria-controls="menuPrincipal"
+                    aria-expanded="false"
+                    aria-label="Abrir menú">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">
+                            Inicio
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicios.html">
+                            Servicios
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="envios.html">
+                            Rastreo de envíos
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">
+                            Contacto
+                        </a>
+                    </li>
+
+                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                        <a href="cotizacion.html" class="btn btn-cotizar">
+                            Solicitar cotización
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+    
+<main>
+
+    <section class="seccion-rastreo">
+
+        <div class="container text-center">
+
+            <h1 class="titulo-rastreo">
+                RASTREA TU ENVÍO INGRESANDO EL NÚMERO DE GUÍA:
+            </h1>
+
+            <form id="formRastreo" class="formulario-rastreo">
+
+                <div class="campo-rastreo">
+
+                    <input type="text"
+                           id="numeroGuia"
+                           class="form-control"
+                           placeholder="Ej: PY12345678CR"
+                           maxlength="12"
+                           aria-label="Número de guía"
+                           required>
+
+                    <span class="icono-rastreo">
+                        <i class="bi bi-search"></i>
+                    </span>
+
+                    <button type="submit" class="btn-rastrear">
+                        Rastrear envío
+                    </button>
+
+                </div>
+                <small class="formato-guia">
+                Formato de guía: PY seguido de 8 números y CR.
+            </small>
+
+            </form>
+
+
+            <div
+            id="resultadoRastreo"
+            class="resultado-rastreo"
+            aria-live="polite"
+            hidden>
+        </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+     <!-- PIE DE PÁGINA -->
+    <footer class="footer-nimbus">
+
+        <div class="container py-4">
+
+            <div class="row align-items-center g-3">
+
+                <div class="col-md-6">
+
+                    <h5>NIMBUSCR</h5>
+
+                </div>
+
+                <div class="col-md-6 text-md-end">
+
+                    <p class="mb-0">
+                        © 2026 NimbusCR. Ericka Morales Quesada.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript personalizado -->
+    <script src="JS/rastreo.js"></script>
+
+</body>
+</html>
